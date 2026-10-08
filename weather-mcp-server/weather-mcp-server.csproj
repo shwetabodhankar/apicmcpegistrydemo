@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>weather_mcp_server</RootNamespace>
+    <!-- Used by scripts/register-app-service-mcp.ps1 when registering in API Center. -->
+    <Version>1.0.0</Version>
+    <Title>Weather MCP</Title>
+    <Description>Deterministic mock weather MCP server. Implements Streamable HTTP at /mcp and explicitly disables legacy HTTP+SSE.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ModelContextProtocol.AspNetCore" Version="2.2.0" />
+  </ItemGroup>
+
+</Project>
